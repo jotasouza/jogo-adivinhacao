@@ -19,7 +19,6 @@ const chute = document.getElementById('chute')
 
 //VARIAVEL QUE CHAMA A FUNÇÃO E RECEBE O NUMERO ALEATÓRIO
 let numeroSorteado = jogoAdivinha.numeroSorteado()
-console.log(numeroSorteado)
 
 //FUNÇÃO QUE ATUALIZA NA PÁGINA O NÚMERO DE TENTATIVAS
 function atualizaTentativas(tentativa, valor){
@@ -38,7 +37,6 @@ function reiniciaJogo(){
     chute.value = ''
     jogoAdivinha.tentativa = 0
     numeroSorteado = jogoAdivinha.numeroSorteado()
-    console.log(numeroSorteado)
     btnVerifica.removeEventListener('click', reiniciaJogo)
 }
 
